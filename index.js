@@ -32,8 +32,7 @@ function veranderBericht() {
 }
 
 // Functie om de afbeelding en het geldbedrag te veranderen
-function veranderAfbeelding(afbeelding, kosten) {
-  //bron gebruik parameters: chatgpt, prompt: hoe kan ik parameters gebruiken om dit efficient te maken?
+function veranderAfbeelding(afbeelding, kosten) { //bron gebruik parameters: chatgpt, prompt: hoe kan ik parameters gebruiken om dit efficient te maken?
   let bank = document.querySelector("#bank2"); //basis afbeelding aangeroepen van html
   bank.src = afbeelding; // Verander de bron van de afbeelding
   muntjes = muntjes - kosten; //-= is een verkorte versie hiervan
