@@ -17,7 +17,7 @@ const bericht = document.querySelector("#tekstje");
 let muntjes = 255;
 
 function veranderBericht() {
-  // Haal de huidige waarde van geldMunt op en zet het om naar een getal
+  //Over of onder een bepaalde waarde van de muntjes pas ik een tekstje aan
   if (muntjes >= 500) {
     bericht.textContent = "Je hebt 500 muntjes aan salaris verdiend!";
     bericht.style.color = "#109010";
@@ -32,13 +32,15 @@ function veranderBericht() {
 }
 
 // Functie om de afbeelding en het geldbedrag te veranderen
-function veranderAfbeelding(afbeelding, kosten) { //bron gebruik parameters: chatgpt, prompt: hoe kan ik parameters gebruiken om dit efficient te maken?
+function veranderAfbeelding(afbeelding, kosten) {
+  //bron chatgpt prompt: hoe kan ik parameters gebruiken om dit efficient te maken?
   let bank = document.querySelector("#bank2"); //basis afbeelding aangeroepen van html
   bank.src = afbeelding; // Verander de bron van de afbeelding
-  muntjes = muntjes - kosten; //-= is een verkorte versie hiervan
+  muntjes = muntjes - kosten; //kosten van bankrekening aftrekken
   geldMunt.textContent = muntjes; // Veranderd de tekst van het muntjes element
 
-  audio.play(); //Speelt audio per klik van een knop
+  //Speelt audio per klik van een knop
+  audio.play(); //Bron: MDN en chatbot prompt: hoe kan ik audio toevoegen in mijn javascript? 
   veranderBericht(); //Past het bericht aan op basis van nieuwe waarde muntjes
 }
 
@@ -75,13 +77,14 @@ function toonEersteKnoppen() {
   houseImage.src = "images/mansion.jpg";
 }
 
-restartButton.addEventListener("click", verbergKnoppen);
 startButton.addEventListener("click", toonEersteKnoppen);
 werkButton.addEventListener("click", nieuwGeld);
+restartButton.addEventListener("click", verbergKnoppen);
 
 // Voeg event listeners toe aan de knoppen en roep de functie aan met specifieke argumenten
 bankButton.addEventListener("click", function () {
-  veranderAfbeelding("images/mansion_newcouch.png", 60);
+  veranderAfbeelding("images/mansion_newcouch.png", 60); 
+  //hulp van een bron: chatgpt, prompt: hoe kan ik parameters gebruiken om dit efficient te maken?
   bankButton.style.display = "none";
   tafelButton.style.display = "inline";
 });
