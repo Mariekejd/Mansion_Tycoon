@@ -104,10 +104,5 @@ behangButton.addEventListener("click", function () {
   behangButton.style.display = "none";
 });
 
-//muntjes is a number
-// "" + muntjes is een string
-// muntjes.toString() ook een string
-// muntjesInTekst = muntjes.toString() ?
-
 geldMunt.textContent = muntjes;
 //geldMunt.textContent = muntjes.toString(); --> Walter neergezet
