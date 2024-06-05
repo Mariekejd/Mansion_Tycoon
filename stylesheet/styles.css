@@ -1,0 +1,105 @@
+body {
+  background-color: #a1a1a1;
+}
+
+img {
+  max-width: 85%;
+  height: auto;
+}
+
+button {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  right: 100px;
+  padding: 10px;
+  background-color: rgb(126, 97, 154);
+  color: white;
+}
+
+#bank {
+  top: 80px;
+}
+
+#tafel {
+  top: 140px;
+}
+
+#vloer {
+  top: 200px;
+}
+
+#behang {
+  top: 260px;
+}
+
+#muntjes {
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-weight: bold;
+  background-color: rgb(255, 187, 0);
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  user-select: none; /* Voorkomt tekstselectie */
+  font-size: 16px;
+}
+
+#work {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-weight: bold;
+  background-color: rgb(111, 32, 17);
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  user-select: none; /* Voorkomt tekstselectie */
+  font-size: 16px;
+}
+
+#tekstje {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#begin {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  position: relative;
+  top: 130px;
+  left: 47%;
+  font-weight: bold;
+  background-color: rgb(230, 32, 233);
+  display: inline-block;
+  padding: 5px 20px;
+  text-align: center;
+  user-select: none; /* Voorkomt tekstselectie */
+  font-size: 16px;
+}
+
+#opnieuw {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  position: relative;
+  top: 130px;
+  left: 45%;
+  font-weight: bold;
+  background-color: rgb(57, 94, 218);
+  display: inline-block;
+  padding: 5px 20px;
+  text-align: center;
+  user-select: none; /* Voorkomt tekstselectie */
+  font-size: 16px;
+}
