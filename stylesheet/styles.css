@@ -38,7 +38,7 @@ button {
   color: black;
   position: relative;
   left: 20px;
-  top: 20px;
+  top: 25px;
   font-weight: bold;
   background-color: rgb(255, 187, 0);
   display: inline-block;
@@ -55,7 +55,7 @@ button {
   color: rgb(255, 255, 255);
   position: relative;
   left: 20px;
-  top: 20px;
+  top: 25px;
   font-weight: bold;
   background-color: rgb(111, 32, 17);
   display: inline-block;
