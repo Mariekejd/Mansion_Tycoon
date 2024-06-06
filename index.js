@@ -73,13 +73,13 @@ function toonEersteKnoppen() {
   bericht.textContent = "Knap je huis op!";
   bericht.style.color = "black";
   
-  let houseImage = document.querySelector("#bank2");
-  houseImage.src = "images/mansion.jpg";
+  let basisImage = document.querySelector("#imageMansion");
+  basisImage.src = "images/mansion.jpg";
 }
 
+restartButton.addEventListener("click", verbergKnoppen);
 startButton.addEventListener("click", toonEersteKnoppen);
 werkButton.addEventListener("click", nieuwGeld);
-restartButton.addEventListener("click", verbergKnoppen);
 
 // Voeg event listeners toe aan de knoppen en roep de functie aan met specifieke argumenten
 bankButton.addEventListener("click", function () {
