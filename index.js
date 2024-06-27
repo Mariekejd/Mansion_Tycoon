@@ -14,7 +14,7 @@ const geldMunt = document.querySelector("#muntjes");
 const bericht = document.querySelector("#tekstje");
 
 //bankrekening
-let muntjes = 255;
+let muntjes = 20;
 
 function veranderBericht() {
   //Over of onder een bepaalde waarde van de muntjes pas ik een tekstje aan
